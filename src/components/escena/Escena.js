@@ -1,7 +1,17 @@
-import React from "react"
+import React from "react";
+import textos from "./Textos";
 
-const MyComponent1 = _ =>
-    <div>El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial</div>
+/* Exercise 1:
+const Escena = _ =>
+    <div>El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial</div> */
 
+// Exercise 2:    
+export const Escena = _ => {
+    return (
+        textos.map((text) => (
+            <p key={text.id}>{text.text}</p>
+        ))
+    );
+}
 
-export default MyComponent1;
+export default Escena;
