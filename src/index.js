@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { GlobalStyle } from './components/escena/styledEscena';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
+    <GlobalStyle />
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 

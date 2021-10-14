@@ -1,5 +1,6 @@
 import React from "react";
-import textos from "./Textos";
+import texts from "../../Texts";
+import { StylesEscena } from "./styledEscena";
 
 /* Exercise 1:
 const Escena = _ =>
@@ -8,10 +9,12 @@ const Escena = _ =>
 // Exercise 2:    
 export const Escena = _ => {
     return (
-        textos.map((text) => (
-            <p key={text.id}>{text.text}</p>
+        texts.map((text) => (
+            <StylesEscena key={text.id}>{text.text}</StylesEscena>
         ))
     );
 }
+
+console.log(Escena(texts));
 
 export default Escena;

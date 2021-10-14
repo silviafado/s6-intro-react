@@ -1,4 +1,4 @@
-const textos = [
+const texts = [
     {
         "id": 1,
         "text": "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"
@@ -18,4 +18,4 @@ const textos = [
 ]
 
 
-export default textos;
+export default texts;
