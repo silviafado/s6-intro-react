@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { GlobalStyle } from './components/escena/styledEscena';
 
 ReactDOM.render(
   <div>
-    <GlobalStyle />
     <App />
   </div>,
   document.getElementById('root')

@@ -1,7 +1,8 @@
-import './App.css';
+import React from 'react';
 import Escena from './components/escena/Escena';
 
 function App() {
+
   return (
     <div>
       <Escena />
