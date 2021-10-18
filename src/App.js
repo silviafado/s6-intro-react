@@ -4,11 +4,11 @@ import { WelcomeStyles, WelcomeButton, WelcomeImg } from './components/welcome/s
 import logo from './assets/img/logo512.png';
 
 const App = _ => {
+
   // Exercise 5: Implementing conditional render and welcome page
   const [start, setStart] = useState(true);
-  const access = () => {
-    setStart(false);
-  }
+  const access = () => setStart(false);
+
   return start ?
     (
       <div>
