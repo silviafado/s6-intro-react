@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Escena from './components/escena/Escena';
+import { WelcomeStyles, WelcomeButton, WelcomeImg } from './components/welcome/styledWelcome';
+import logo from './assets/img/logo512.png';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = _ => {
+
+  // Exercise 5: Implementing conditional render and welcome page
+  const [start, setStart] = useState(true);
+  const access = () => setStart(false);
+
+  return start ?
+    (
+      <div>
+        <WelcomeStyles>
+          <div>Benvinguts a l'aventura interestalar de React</div>
+          <WelcomeButton onClick={access}>Iniciar</WelcomeButton>
+          <WelcomeImg src={logo} />
+        </WelcomeStyles>
+      </div>
+    ) : (<Escena />)
 }
 
 export default App;
