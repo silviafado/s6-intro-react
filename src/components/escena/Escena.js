@@ -22,7 +22,7 @@ export const Escena = _ => {
 
     return (
         <div>
-            <GlobalStyle />
+            <GlobalStyle img={texts[idActive - 1].img} />
             <Button onClick={prevText} disabled={idActive <= 1}>Anterior</Button>
             <Button onClick={nextText} disabled={idActive >= texts.length}>Següent</Button>
             {textElements}
